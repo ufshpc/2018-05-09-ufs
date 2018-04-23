@@ -7,7 +7,7 @@ country: "za"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "-29.1091105,26.1832159"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "May 9 - 11, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "8:30 - 16:30"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humantime: "9 & 10 May 8:30 - 16:30; 11 May 8:30 - 13:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2018-05-09      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2018-05-11        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Isak van der Walt", "Gaonyalelwe Maribe", "Zine Sapula"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -117,7 +117,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p id="registration">
 	<font color="green"><strong>Registration:</strong>
 	Please complete the registration form at <a href="https://goo.gl/forms/IHDsWaEZkFjbidQp2">https://goo.gl/forms/IHDsWaEZkFjbidQp2</a>. Limited space is available. Places will be allocated on a first come, first served principle.
-		</font></p>
+</font></p>
+
+<p id="meals">
+  <strong>Meals:</strong>
+<p> Lunch will be catered for.</p>
+<p>Tea/Coffee will be provided according to schedule.
+</p>
 	
 {% comment %}
   SPECIAL REQUIREMENTS
@@ -219,13 +225,33 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
 
-{% if page.carpentry == "swc" %}
-  {% include sc/schedule.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/schedule.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/schedule.html %}
-{% endif %}
+<div class="row">
+  <div class="col-md-6">
+
+    <h3>Day 1</h3>
+    <h4>9 May 2018</h4>
+    <table class="table table-striped">
+       <tr> <td>Morning</td>  <td>Digital Scholarship & Data organisation in spreadsheets</td> </tr>
+       <tr> <td>Afternoon</td>  <td>Data organisation in spreadsheets & Data cleaning with OpenRefine</td> </tr>
+    </table>
+ <br>
+  <h3>Day 2</h3>
+    <h4>10 May 2018</h4>
+    <table class="table table-striped">
+      <tr> <td>Morning</td>  <td>Data cleaning with OpenRefine & Data analysis and visualisation in R</td> </tr>
+      <tr> <td>Afternoon</td>  <td>Data analysis and visualisation in R</td> </tr>
+    </table>
+     <br>
+
+    <h3>Day 3</h3>
+    <h4>11 May 2018</h4>
+    <table class="table table-striped">
+      <tr> <td>Morning</td>  <td>Data analysis and visualisation in R</td> </tr>
+    </table>
+ </div>
+</div>
+
+ 
 
 {% comment %}
   Collaborative Notes
