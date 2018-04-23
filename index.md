@@ -115,9 +115,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </p>
 
 <p id="registration">
-	<strong><font color="green">Registration:</strong>
+	<font color="green"><strong>Registration:</strong>
 	Please complete the registration form at <a href="https://goo.gl/forms/IHDsWaEZkFjbidQp2">https://goo.gl/forms/IHDsWaEZkFjbidQp2</a>. Limited space is available. Places will be allocated on a first come, first served principle.
-		</p></font>
+		</font></p>
 	
 {% comment %}
   SPECIAL REQUIREMENTS
