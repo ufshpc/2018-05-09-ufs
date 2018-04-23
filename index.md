@@ -108,6 +108,17 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </p>
 {% endif %}
 
+<p id="funders">
+	<strong>Sponsors and Organisers:</strong>
+	The workshop is jointly organised by the University of the Free State 
+	<a href="https://www.ufs.ac.za/library ">Library and Information Services</a> and <a href="https://www.ufs.ac.za/ict">ICT Services</a> as well as <a href="http://humanities.nwu.ac.za/unit-languages-and-literature-sa-context/sadilar">SADILaR</a> and the <a href="https://tenet-rccpii.github.io/rccpii-2018/">Rural Campuses Connection Project</a>.
+</p>
+
+<p id="registration">
+	<strong><font color="green">Registration:</strong>
+	Please complete the registration form at <a href="https://goo.gl/forms/IHDsWaEZkFjbidQp2">https://goo.gl/forms/IHDsWaEZkFjbidQp2</a>. Limited space is available. Places will be allocated on a first come, first served principle.
+		</p></font>
+	
 {% comment %}
   SPECIAL REQUIREMENTS
 
