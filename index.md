@@ -203,12 +203,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 {% if page.carpentry == "swc" %} 
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<p><a href="https://www.surveymonkey.com/r/lcpreworkshopsurvey?workshop_id=[workshop_id_value]">Pre-workshop Survey</a></p>
+<p><a href="https://www.surveymonkey.com/r/lcpostworkshopsurvey?workshop_id=[workshop_id_value]">Post-workshop Survey</a></p>
 {% elsif page.carpentry == "dc" %}
   <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.dc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<p><a href="https://www.surveymonkey.com/r/lcpreworkshopsurvey?workshop_id=[workshop_id_value]">Pre-workshop Survey</a></p>
+<p><a href="https://www.surveymonkey.com/r/lcpostworkshopsurvey?workshop_id=[workshop_id_value]">Post-workshop Survey</a></p>
 {% elsif page.carpentry == "lc" %}
 <p>Ask your instructor about pre- and post-workshop Survey details.</p>
 {% endif %}
